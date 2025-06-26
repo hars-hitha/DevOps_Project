@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Cloning Repo') {
             steps {
-                git 'https://github.com/hars-hitha/DevOps_Project.git'
+                git branch: 'main', url: 'https://github.com/hars-hitha/DevOps_Project.git'
             }
         }
         stage('Echo') {
